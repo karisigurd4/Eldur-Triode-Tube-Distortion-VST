@@ -1,7 +1,7 @@
 # Eldur – Koren’s Triode Tube Distortion VST
 
 <p align="center">
-  <img src="LINK_TO_YOUR_SCREENSHOT.png" alt="Eldur Screenshot" width="500">
+  <img src="Screenshot.png" alt="Eldur Screenshot" width="500">
 </p>
 
 ## Overview
