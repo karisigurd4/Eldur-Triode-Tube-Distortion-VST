@@ -5,7 +5,7 @@
 </p>
 
 ## Overview
-**Eldur** is a CPU-intensive, tube-inspired distortion plugin based on [Koren’s Triode Model](https://psrr.org/triodemodel.pdf). It aims to deliver an authentic, creamy saturation reminiscent of real tube circuitry, while offering a few unique parameters to shape the tone—such as Bias Drift, Drive, and a Mix control for easy parallel processing.
+**Eldur** is a CPU-intensive, tube-inspired distortion plugin based on Koren’s Triode Model. It aims to deliver an authentic, creamy saturation reminiscent of real tube circuitry, while offering a few unique parameters to shape the tone—such as Bias Drift, Drive, and a Mix control for easy parallel processing.
 
 Whether you want subtle harmonic warmth or all-out valve crunch, Eldur provides a straightforward interface and minimal footprint (other than its appetite for CPU!). Perfect for experimenters, gearheads, or anyone curious about tube modeling.
 
