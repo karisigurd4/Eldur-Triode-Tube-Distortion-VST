@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="kSYd94" name="Imperial Triode Overlord" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="SXOkWk" name="Imperial Triode Overlord">
+    <GROUP id="{7EC295A3-4068-C859-3484-52202107F0CB}" name="Source">
+      <FILE id="tuNq1g" name="bgr3.png" compile="0" resource="1" file="Resources/bgr3.png"/>
+      <GROUP id="{56622BF2-6D95-0446-165C-1642CCFF6618}" name="Knob_2">
+        <FILE id="yL5ym0" name="0001.png" compile="0" resource="1" file="Resources/Knob_2/0001.png"/>
+        <FILE id="bVYRjc" name="0002.png" compile="0" resource="1" file="Resources/Knob_2/0002.png"/>
+        <FILE id="lsMsD9" name="0003.png" compile="0" resource="1" file="Resources/Knob_2/0003.png"/>
+        <FILE id="FsH0SR" name="0004.png" compile="0" resource="1" file="Resources/Knob_2/0004.png"/>
+        <FILE id="TNFFx7" name="0005.png" compile="0" resource="1" file="Resources/Knob_2/0005.png"/>
+        <FILE id="dAGtdQ" name="0006.png" compile="0" resource="1" file="Resources/Knob_2/0006.png"/>
+        <FILE id="UxxBuB" name="0007.png" compile="0" resource="1" file="Resources/Knob_2/0007.png"/>
+        <FILE id="H6dzUg" name="0008.png" compile="0" resource="1" file="Resources/Knob_2/0008.png"/>
+        <FILE id="xarS7k" name="0009.png" compile="0" resource="1" file="Resources/Knob_2/0009.png"/>
+        <FILE id="sHQtTX" name="0010.png" compile="0" resource="1" file="Resources/Knob_2/0010.png"/>
+        <FILE id="g3OS4k" name="0011.png" compile="0" resource="1" file="Resources/Knob_2/0011.png"/>
+        <FILE id="pByJWb" name="0012.png" compile="0" resource="1" file="Resources/Knob_2/0012.png"/>
+        <FILE id="tbDUiR" name="0013.png" compile="0" resource="1" file="Resources/Knob_2/0013.png"/>
+        <FILE id="Izk138" name="0014.png" compile="0" resource="1" file="Resources/Knob_2/0014.png"/>
+        <FILE id="OB5e0C" name="0015.png" compile="0" resource="1" file="Resources/Knob_2/0015.png"/>
+        <FILE id="GsIHEI" name="0016.png" compile="0" resource="1" file="Resources/Knob_2/0016.png"/>
+        <FILE id="cAjYiB" name="0017.png" compile="0" resource="1" file="Resources/Knob_2/0017.png"/>
+        <FILE id="aZsNgb" name="0018.png" compile="0" resource="1" file="Resources/Knob_2/0018.png"/>
+        <FILE id="p6hdLk" name="0019.png" compile="0" resource="1" file="Resources/Knob_2/0019.png"/>
+        <FILE id="Y7cZuu" name="0020.png" compile="0" resource="1" file="Resources/Knob_2/0020.png"/>
+        <FILE id="B8sHhK" name="0021.png" compile="0" resource="1" file="Resources/Knob_2/0021.png"/>
+        <FILE id="MNq7VO" name="0022.png" compile="0" resource="1" file="Resources/Knob_2/0022.png"/>
+        <FILE id="AFWuKX" name="0023.png" compile="0" resource="1" file="Resources/Knob_2/0023.png"/>
+        <FILE id="tAmMue" name="0024.png" compile="0" resource="1" file="Resources/Knob_2/0024.png"/>
+        <FILE id="fGITFf" name="0025.png" compile="0" resource="1" file="Resources/Knob_2/0025.png"/>
+        <FILE id="o1tfmK" name="0026.png" compile="0" resource="1" file="Resources/Knob_2/0026.png"/>
+        <FILE id="SflkEW" name="0027.png" compile="0" resource="1" file="Resources/Knob_2/0027.png"/>
+        <FILE id="Tej7om" name="0028.png" compile="0" resource="1" file="Resources/Knob_2/0028.png"/>
+        <FILE id="VV66P6" name="0029.png" compile="0" resource="1" file="Resources/Knob_2/0029.png"/>
+        <FILE id="JawCgt" name="0030.png" compile="0" resource="1" file="Resources/Knob_2/0030.png"/>
+        <FILE id="qSEJWk" name="0031.png" compile="0" resource="1" file="Resources/Knob_2/0031.png"/>
+        <FILE id="NGGpJM" name="0032.png" compile="0" resource="1" file="Resources/Knob_2/0032.png"/>
+        <FILE id="hEquH1" name="0033.png" compile="0" resource="1" file="Resources/Knob_2/0033.png"/>
+        <FILE id="XwopiV" name="0034.png" compile="0" resource="1" file="Resources/Knob_2/0034.png"/>
+        <FILE id="Mg5Whe" name="0035.png" compile="0" resource="1" file="Resources/Knob_2/0035.png"/>
+        <FILE id="HRCiJy" name="0036.png" compile="0" resource="1" file="Resources/Knob_2/0036.png"/>
+        <FILE id="sZqbJ6" name="0037.png" compile="0" resource="1" file="Resources/Knob_2/0037.png"/>
+        <FILE id="XS7VOW" name="0038.png" compile="0" resource="1" file="Resources/Knob_2/0038.png"/>
+        <FILE id="ONJaHR" name="0039.png" compile="0" resource="1" file="Resources/Knob_2/0039.png"/>
+        <FILE id="jNKuzw" name="0040.png" compile="0" resource="1" file="Resources/Knob_2/0040.png"/>
+        <FILE id="YNLniP" name="0041.png" compile="0" resource="1" file="Resources/Knob_2/0041.png"/>
+        <FILE id="hLEaKD" name="0042.png" compile="0" resource="1" file="Resources/Knob_2/0042.png"/>
+        <FILE id="aiy6Cg" name="0043.png" compile="0" resource="1" file="Resources/Knob_2/0043.png"/>
+        <FILE id="RjSD7I" name="0044.png" compile="0" resource="1" file="Resources/Knob_2/0044.png"/>
+        <FILE id="kyZvU7" name="0045.png" compile="0" resource="1" file="Resources/Knob_2/0045.png"/>
+        <FILE id="GgbfGm" name="0046.png" compile="0" resource="1" file="Resources/Knob_2/0046.png"/>
+        <FILE id="YlLX6X" name="0047.png" compile="0" resource="1" file="Resources/Knob_2/0047.png"/>
+        <FILE id="nhQm6Q" name="0048.png" compile="0" resource="1" file="Resources/Knob_2/0048.png"/>
+        <FILE id="Kpkcl3" name="0049.png" compile="0" resource="1" file="Resources/Knob_2/0049.png"/>
+        <FILE id="Wo1LH9" name="0050.png" compile="0" resource="1" file="Resources/Knob_2/0050.png"/>
+        <FILE id="t0Tu1S" name="0051.png" compile="0" resource="1" file="Resources/Knob_2/0051.png"/>
+        <FILE id="sRFrUB" name="0052.png" compile="0" resource="1" file="Resources/Knob_2/0052.png"/>
+        <FILE id="c8nIkE" name="0053.png" compile="0" resource="1" file="Resources/Knob_2/0053.png"/>
+        <FILE id="QQyrT4" name="0054.png" compile="0" resource="1" file="Resources/Knob_2/0054.png"/>
+        <FILE id="guqCM6" name="0055.png" compile="0" resource="1" file="Resources/Knob_2/0055.png"/>
+        <FILE id="qSWC9O" name="0056.png" compile="0" resource="1" file="Resources/Knob_2/0056.png"/>
+        <FILE id="AuU0vG" name="0057.png" compile="0" resource="1" file="Resources/Knob_2/0057.png"/>
+        <FILE id="fQUlbJ" name="0058.png" compile="0" resource="1" file="Resources/Knob_2/0058.png"/>
+        <FILE id="yYQqYc" name="0059.png" compile="0" resource="1" file="Resources/Knob_2/0059.png"/>
+        <FILE id="I8Pe1w" name="0060.png" compile="0" resource="1" file="Resources/Knob_2/0060.png"/>
+        <FILE id="uSfqEO" name="0061.png" compile="0" resource="1" file="Resources/Knob_2/0061.png"/>
+        <FILE id="OTgMQQ" name="0062.png" compile="0" resource="1" file="Resources/Knob_2/0062.png"/>
+        <FILE id="LbzXCr" name="0063.png" compile="0" resource="1" file="Resources/Knob_2/0063.png"/>
+        <FILE id="HqOpiG" name="0064.png" compile="0" resource="1" file="Resources/Knob_2/0064.png"/>
+        <FILE id="JvPBwi" name="0065.png" compile="0" resource="1" file="Resources/Knob_2/0065.png"/>
+        <FILE id="Z0bKek" name="0066.png" compile="0" resource="1" file="Resources/Knob_2/0066.png"/>
+        <FILE id="hhPewb" name="0067.png" compile="0" resource="1" file="Resources/Knob_2/0067.png"/>
+        <FILE id="LQFo9I" name="0068.png" compile="0" resource="1" file="Resources/Knob_2/0068.png"/>
+        <FILE id="nlUzNJ" name="0069.png" compile="0" resource="1" file="Resources/Knob_2/0069.png"/>
+        <FILE id="chIvxi" name="0070.png" compile="0" resource="1" file="Resources/Knob_2/0070.png"/>
+        <FILE id="liKpFi" name="0071.png" compile="0" resource="1" file="Resources/Knob_2/0071.png"/>
+        <FILE id="Qg2Awv" name="0072.png" compile="0" resource="1" file="Resources/Knob_2/0072.png"/>
+        <FILE id="SXECUq" name="0073.png" compile="0" resource="1" file="Resources/Knob_2/0073.png"/>
+        <FILE id="Yj2FeD" name="0074.png" compile="0" resource="1" file="Resources/Knob_2/0074.png"/>
+        <FILE id="nJGNaB" name="0075.png" compile="0" resource="1" file="Resources/Knob_2/0075.png"/>
+        <FILE id="loHJJb" name="0076.png" compile="0" resource="1" file="Resources/Knob_2/0076.png"/>
+        <FILE id="a8oOJc" name="0077.png" compile="0" resource="1" file="Resources/Knob_2/0077.png"/>
+        <FILE id="ogScAQ" name="0078.png" compile="0" resource="1" file="Resources/Knob_2/0078.png"/>
+        <FILE id="g2v4LB" name="0079.png" compile="0" resource="1" file="Resources/Knob_2/0079.png"/>
+        <FILE id="UnuH1P" name="0080.png" compile="0" resource="1" file="Resources/Knob_2/0080.png"/>
+        <FILE id="tz2lA5" name="0081.png" compile="0" resource="1" file="Resources/Knob_2/0081.png"/>
+        <FILE id="Bc56Dm" name="0082.png" compile="0" resource="1" file="Resources/Knob_2/0082.png"/>
+        <FILE id="FpGLx7" name="0083.png" compile="0" resource="1" file="Resources/Knob_2/0083.png"/>
+        <FILE id="SA9BDP" name="0084.png" compile="0" resource="1" file="Resources/Knob_2/0084.png"/>
+        <FILE id="K43RSJ" name="0085.png" compile="0" resource="1" file="Resources/Knob_2/0085.png"/>
+        <FILE id="Wu5ZVX" name="0086.png" compile="0" resource="1" file="Resources/Knob_2/0086.png"/>
+        <FILE id="sVIHkn" name="0087.png" compile="0" resource="1" file="Resources/Knob_2/0087.png"/>
+        <FILE id="cmJde9" name="0088.png" compile="0" resource="1" file="Resources/Knob_2/0088.png"/>
+        <FILE id="DkvUnz" name="0089.png" compile="0" resource="1" file="Resources/Knob_2/0089.png"/>
+        <FILE id="b4DTPO" name="0090.png" compile="0" resource="1" file="Resources/Knob_2/0090.png"/>
+        <FILE id="lankho" name="0091.png" compile="0" resource="1" file="Resources/Knob_2/0091.png"/>
+        <FILE id="zwIpqo" name="0092.png" compile="0" resource="1" file="Resources/Knob_2/0092.png"/>
+        <FILE id="pJlrHf" name="0093.png" compile="0" resource="1" file="Resources/Knob_2/0093.png"/>
+        <FILE id="XlTJzx" name="0094.png" compile="0" resource="1" file="Resources/Knob_2/0094.png"/>
+        <FILE id="XCCnuY" name="0095.png" compile="0" resource="1" file="Resources/Knob_2/0095.png"/>
+        <FILE id="klBjwT" name="0096.png" compile="0" resource="1" file="Resources/Knob_2/0096.png"/>
+        <FILE id="vBwIgt" name="0097.png" compile="0" resource="1" file="Resources/Knob_2/0097.png"/>
+        <FILE id="C4ct0E" name="0098.png" compile="0" resource="1" file="Resources/Knob_2/0098.png"/>
+        <FILE id="OrjYfu" name="0099.png" compile="0" resource="1" file="Resources/Knob_2/0099.png"/>
+        <FILE id="ANPmuJ" name="0100.png" compile="0" resource="1" file="Resources/Knob_2/0100.png"/>
+      </GROUP>
+      <FILE id="YgpCjV" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="JERKs2" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="DfzDPd" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="FT6PGe" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <FILE id="gEgitP" name="bgr1.png" compile="0" resource="1" file="Resources/bgr1.png"/>
+    <FILE id="FTLZLA" name="StepKnob1.png" compile="0" resource="1" file="Resources/StepKnob1.png"/>
+    <FILE id="yhgfFH" name="StepKnob2.png" compile="0" resource="1" file="Resources/StepKnob2.png"/>
+    <FILE id="WmETxJ" name="StepKnob3.png" compile="0" resource="1" file="Resources/StepKnob3.png"/>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" toolset="v142">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Eldur"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Eldur"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
