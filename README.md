@@ -21,8 +21,7 @@ Whether you want subtle harmonic warmth or all-out valve crunch, Eldur provides 
 - Feedback and pull requests for optimizations or improvements are always welcome!
 
 ## Download
-- **[Download the latest .vst3 build here](LINK_TO_LATEST_VST3_IN_REPO)**  
-  *(Replace with the actual link to your compiled binary in the repo.)*
+- **[Download the latest .vst3 build here](Eldur.vst3)**  
 
 ## How to Install
 1. Copy the `.vst3` file to your VST3 plugins folder (commonly located in `C:\Program Files\Common Files\VST3` on Windows or `Library/Audio/Plug-Ins/VST3` on macOS).
