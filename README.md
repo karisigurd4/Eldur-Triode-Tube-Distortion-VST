@@ -16,7 +16,7 @@ Whether you want subtle harmonic warmth or all-out valve crunch, Eldur provides 
 - **Mix Control**: Blend dry and wet signals for parallel processing.  
 
 ## CPU Usage & Disclaimer
-- Eldur is **CPU-heavy** and currently optimized for one specific machine.  
+- Eldur is **CPU-heavy** and currently optimized for one specific machine. My machine. Doesn't get more "Works on my machine" than that.
 - Use it at your own risk—if it brings your DAW to its knees, well, at least you’ll know it’s doing some serious math.  
 - Feedback and pull requests for optimizations or improvements are always welcome!
 
