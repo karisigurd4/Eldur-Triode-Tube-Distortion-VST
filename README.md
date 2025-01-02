@@ -32,4 +32,4 @@ Whether you want subtle harmonic warmth or all-out valve crunch, Eldur provides 
 Feel free to open issues or submit pull requests if you have ideas, performance fixes, or feature suggestions. Any form of contribution is welcome!
 
 ---
-© 2025 YourName – Licensed under [MIT License](LICENSE).
+Licensed under [MIT License](LICENSE).
