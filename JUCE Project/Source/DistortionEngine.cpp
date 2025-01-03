@@ -71,14 +71,14 @@ void DistortionEngine::decodeFromMS(juce::AudioBuffer<float>& buffer)
 void DistortionEngine::applyTriodeStages(float sampleRate, juce::dsp::AudioBlock<float>& oversampledBlock,
   float drive, float bias)
 {
-  // Stage 1
+  // Stage 1 12AX7
   KorenTriodeModel::processAudioBlock(
     oversampledBlock,
-    /* gainVal   */ drive * 1.0f,
+    /* gainVal   */ 0.3f,
     /* bias      */ 0.0f,
-    /* drive     */ 1.0f + (drive * 30.0f),
-    /* G         */ 1e-2f,
-    /* mu        */ 50.0f,
+    /* drive     */ 1.0f + (drive * 60.0f),
+    /* G         */ 2.5e-3f,
+    /* mu        */ 100.0f,
     /* C         */ 0.5f,
     /* P         */ 1.5f,
     /* B_plus    */ 200.0f,
@@ -86,42 +86,42 @@ void DistortionEngine::applyTriodeStages(float sampleRate, juce::dsp::AudioBlock
     // maxIter + tol using defaults
   );
 
-  // Stage 2
+  // Stage 2 12AX7
   KorenTriodeModel::processAudioBlock(
     oversampledBlock,
-    /* gainVal   */ drive * 0.75f,
+    /* gainVal   */ 0.3f,
     /* bias      */  1.25f * bias,
-    /* drive     */ 1.0f + (drive * 30.0f),
-    /* G         */ 1e-2f,
-    /* mu        */ 30.0f,
+    /* drive     */ 1.0f + (drive * 40.0f),
+    /* G         */ 2.5e-3f,
+    /* mu        */ 100.0f,
     /* C         */ 0.5f,
     /* P         */ 1.5f,
     /* B_plus    */ 300.0f,
     /* Rp        */ 200000.0f
   );
 
-  // Stage 3
+  // Stage 3 12AT7
   KorenTriodeModel::processAudioBlock(
     oversampledBlock,
-    /* gainVal   */ drive * 0.6f,
+    /* gainVal   */ drive * 0.65f,
     /* bias      */ -1.35f * bias,
-    /* drive     */ 1.0f + (drive * 20.0f),
-    /* G         */ 1e-2f,
-    /* mu        */ 40.0f,
+    /* drive     */ 1.0f + (drive * 30.0f),
+    /* G         */ 3.5e-3f,
+    /* mu        */ 60.0f,
     /* C         */ 0.5f,
     /* P         */ 1.5f,
     /* B_plus    */ 350.0f,
     /* Rp        */ 160000.0f
   );
 
-  // Stage 4
+  // Stage 4 12AT7
   KorenTriodeModel::processAudioBlock(
     oversampledBlock,
-    /* gainVal   */ drive * 0.6f,
+    /* gainVal   */ drive * 0.55f,
     /* bias      */ 1.5f * bias,
-    /* drive     */ 1.0f + (drive * 20.0f),
-    /* G         */ 1e-2f,
-    /* mu        */ 40.0f,
+    /* drive     */ 1.0f + (drive * 30.0f),
+    /* G         */ 3.5e-3f,
+    /* mu        */ 60.0f,
     /* C         */ 0.5f,
     /* P         */ 1.5f,
     /* B_plus    */ 400.0f,
@@ -132,14 +132,14 @@ void DistortionEngine::applyTriodeStages(float sampleRate, juce::dsp::AudioBlock
   toneStack.setDrive(drive);
   toneStack.processAudioBlock(sampleRate, oversampledBlock);
 
-  // Stage 5
+  // Stage 5 12AU7
   KorenTriodeModel::processAudioBlock(
     oversampledBlock,
-    /* gainVal   */ drive * 0.6f,
+    /* gainVal   */ 0.5f,
     /* bias      */ -1.25f * bias,
-    /* drive     */ 1.0f + (drive * 15.0f),
-    /* G         */ 1e-2f,
-    /* mu        */ 60.0f,
+    /* drive     */ 1.0f + (drive * 20.0f),
+    /* G         */ 7.0e-3f,
+    /* mu        */ 17.0f,
     /* C         */ 0.5f,
     /* P         */ 1.5f,
     /* B_plus    */ 400.0f,

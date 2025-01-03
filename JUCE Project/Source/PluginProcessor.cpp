@@ -13,7 +13,7 @@ ImperialTriodeOverlordAudioProcessor::ImperialTriodeOverlordAudioProcessor()
   ),
   parameters(*this, nullptr, juce::Identifier("params"),
     {
-        std::make_unique<juce::AudioParameterFloat>("drive", "Drive",  0.65f, 1.0f, 0.7f),
+        std::make_unique<juce::AudioParameterFloat>("drive", "Drive",  0.25f, 1.0f, 0.6f),
         std::make_unique<juce::AudioParameterFloat>("mix",   "Mix",    0.0f, 1.0f, 1.0f),
         std::make_unique<juce::AudioParameterFloat>("bias",  "Bias",   0.0f, 2.0f, 0.0f)
     })
