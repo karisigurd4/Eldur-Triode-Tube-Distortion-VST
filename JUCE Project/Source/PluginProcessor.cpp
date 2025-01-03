@@ -92,7 +92,7 @@ void ImperialTriodeOverlordAudioProcessor::processBlock(juce::AudioBuffer<float>
   distortionEngine.setMix(mix);
 
   // 4) Distortion
-  distortionEngine.processBlock(buffer);
+  distortionEngine.processBlock(getSampleRate(), buffer);
 
   // 5) Brickwall limit
   brickwallLimit(buffer);

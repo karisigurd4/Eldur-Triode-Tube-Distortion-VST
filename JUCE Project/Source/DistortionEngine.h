@@ -19,17 +19,18 @@ public:
   void setMix(float mix) { mixParam = mix; }
 
   // The main entry point
-  void processBlock(juce::AudioBuffer<float>& buffer);
+  void processBlock(float sampleRate, juce::AudioBuffer<float>& buffer);
 
 private:
   void encodeToMS(juce::AudioBuffer<float>& buffer);
   void decodeFromMS(juce::AudioBuffer<float>& buffer);
 
   // triode stages to call sequentially
-  void applyTriodeStages(juce::dsp::AudioBlock<float>& oversampledBlock, float drive, float bias);
+  void applyTriodeStages(float sampleRate, juce::dsp::AudioBlock<float>& oversampledBlock, float drive, float bias);
 
   /** Our tone stack (HP, shelves, peak). */
   ToneStack toneStack;
+  juce::dsp::ProcessorDuplicator<juce::dsp::IIR::Filter<float>, juce::dsp::IIR::Coefficients<float>> highPassFilter;
 
   // e.g. 2x oversampling
   std::unique_ptr<juce::dsp::Oversampling<float>> oversampler;

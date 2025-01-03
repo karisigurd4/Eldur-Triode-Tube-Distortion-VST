@@ -4,6 +4,16 @@
               useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="SXOkWk" name="Imperial Triode Overlord">
     <GROUP id="{7EC295A3-4068-C859-3484-52202107F0CB}" name="Source">
+      <FILE id="V6PLa8" name="DistortionEngine.cpp" compile="1" resource="0"
+            file="Source/DistortionEngine.cpp"/>
+      <FILE id="elqFtP" name="DistortionEngine.h" compile="0" resource="0"
+            file="Source/DistortionEngine.h"/>
+      <FILE id="CoOORV" name="KorenTriodeModel.cpp" compile="1" resource="0"
+            file="Source/KorenTriodeModel.cpp"/>
+      <FILE id="JNRww9" name="KorenTriodeModel.h" compile="0" resource="0"
+            file="Source/KorenTriodeModel.h"/>
+      <FILE id="cvAt79" name="ToneStack.cpp" compile="1" resource="0" file="Source/ToneStack.cpp"/>
+      <FILE id="ABFY2K" name="ToneStack.h" compile="0" resource="0" file="Source/ToneStack.h"/>
       <FILE id="tuNq1g" name="bgr3.png" compile="0" resource="1" file="Resources/bgr3.png"/>
       <GROUP id="{56622BF2-6D95-0446-165C-1642CCFF6618}" name="Knob_2">
         <FILE id="yL5ym0" name="0001.png" compile="0" resource="1" file="Resources/Knob_2/0001.png"/>
@@ -115,7 +125,6 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="FT6PGe" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
-    <FILE id="gEgitP" name="bgr1.png" compile="0" resource="1" file="Resources/bgr1.png"/>
     <FILE id="FTLZLA" name="StepKnob1.png" compile="0" resource="1" file="Resources/StepKnob1.png"/>
     <FILE id="yhgfFH" name="StepKnob2.png" compile="0" resource="1" file="Resources/StepKnob2.png"/>
     <FILE id="WmETxJ" name="StepKnob3.png" compile="0" resource="1" file="Resources/StepKnob3.png"/>

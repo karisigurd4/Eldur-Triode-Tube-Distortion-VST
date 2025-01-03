@@ -13,12 +13,14 @@ void DistortionEngine::prepare(const juce::dsp::ProcessSpec& spec, int oversampl
 
   toneStack.prepare(spec);
 
+  // Prepare the highPassFilter’s internal states
+  highPassFilter.prepare(spec);
+  highPassFilter.reset();
+  *highPassFilter.state = *juce::dsp::IIR::Coefficients<float>::makeHighPass(spec.sampleRate, 20.0f);
+
   // Pre-allocate the dryBuffer at the max size,
   // so we can re-use it without new allocations:
   dryBuffer.setSize((int)spec.numChannels, (int)spec.maximumBlockSize);
-
-  // Possibly set defaults or update filters
-  toneStack.updateCoefficients(spec.sampleRate, 3.0f, 3.0f, 3.0f); // +3 dB example
 }
 
 void DistortionEngine::reset()
@@ -27,6 +29,7 @@ void DistortionEngine::reset()
     oversampler->reset();
 
   toneStack.reset();
+  highPassFilter.reset();
 }
 
 void DistortionEngine::encodeToMS(juce::AudioBuffer<float>& buffer)
@@ -65,7 +68,7 @@ void DistortionEngine::decodeFromMS(juce::AudioBuffer<float>& buffer)
   }
 }
 
-void DistortionEngine::applyTriodeStages(juce::dsp::AudioBlock<float>& oversampledBlock,
+void DistortionEngine::applyTriodeStages(float sampleRate, juce::dsp::AudioBlock<float>& oversampledBlock,
   float drive, float bias)
 {
   // Stage 1
@@ -126,7 +129,8 @@ void DistortionEngine::applyTriodeStages(juce::dsp::AudioBlock<float>& oversampl
   );
 
   // Tone stack in between
-  toneStack.processAudioBlock(oversampledBlock);
+  toneStack.setDrive(drive);
+  toneStack.processAudioBlock(sampleRate, oversampledBlock);
 
   // Stage 5
   KorenTriodeModel::processAudioBlock(
@@ -141,10 +145,13 @@ void DistortionEngine::applyTriodeStages(juce::dsp::AudioBlock<float>& oversampl
     /* B_plus    */ 400.0f,
     /* Rp        */ 150000.0f
   );
+
+  juce::dsp::ProcessContextReplacing<float> context(oversampledBlock);
+  highPassFilter.process(context);
 }
 
 
-void DistortionEngine::processBlock(juce::AudioBuffer<float>& buffer)
+void DistortionEngine::processBlock(float sampleRate, juce::AudioBuffer<float>& buffer)
 {
   // 1) Copy the input (dry) signal into dryBuffer
   const int numChannels = buffer.getNumChannels();
@@ -160,7 +167,7 @@ void DistortionEngine::processBlock(juce::AudioBuffer<float>& buffer)
   auto oversampledBlock = oversampler->processSamplesUp(subset);
 
   // 3) Triode processing
-  applyTriodeStages(oversampledBlock, driveParam, biasParam);
+  applyTriodeStages(sampleRate, oversampledBlock, driveParam, biasParam);
 
   // 4) Downsample
   oversampler->processSamplesDown(subset);
